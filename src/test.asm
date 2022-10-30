@@ -1,13 +1,12 @@
-bits 64
+use64
+format ELF64
 
-%include "../inc/elf.inc"
+include '../inc/lin.inc'
 
-global _start
-section .text
+section '.text' executable
 
+public _start
 _start:
 	mov al, 0x3c
 	xor rdi, rdi
 	syscall
-
-

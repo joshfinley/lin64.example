@@ -1,5 +1,5 @@
-AS=yasm 						# assembler
-ASFLAGS=-f elf64 	 			# assembler flags
+AS=fasm 						# assembler
+ASFLAGS=	 		 			# assembler flags
 LD=ld 							# linker
 LDFLAGS=-m elf_x86_64 -z noseparate-code			
 								# linker flags
@@ -12,7 +12,7 @@ all: $(SOURCES) $(EXECUTABLE)
 	
 # assemble program
 $(OBJECTS): $(SOURCES)
-	@$(AS) $(ASFLAGS) $(SOURCES) -o $@
+	@$(AS) $(ASFLAGS) $(SOURCES) $@
 	@echo "assemble $<"
 
 # create executable

@@ -11,6 +11,6 @@ make
 make clean
 ```
 
-## elf.inc
+## reference
 
-Included for personal convenience and as an example
+- [FASM syntax quick reference](https://en.wikibooks.org/wiki/X86_Assembly/FASM_Syntax)
